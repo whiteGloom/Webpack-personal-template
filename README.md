@@ -9,5 +9,5 @@
 
 `npm run buildW` - перевод Webpack'а в режим автоматической пересборки после изменений;
 
-##end.
+## End.
 `-whiteGloom`
