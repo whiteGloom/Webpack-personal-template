@@ -1,6 +1,6 @@
 // External modules
 const path  = require('path');								// Плагин для упрощения работы с путями
-const merge = require('webpack-merge');						// Плагин для соединения модулей конфига
+const merge = require('webpack-merge');
 
 //
 var folder = path.join(__dirname);							// Переменная, хранящая абсолютный путь до рабочего каталога

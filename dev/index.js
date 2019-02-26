@@ -8,6 +8,16 @@
 
 	Импорт статики в html просиходит через require ( <img src=require("./path/file") ).
 	Импорт статики в CSS происходит как обычно.
-	
+
+	UPD: импорт так же можно проводить при помощи функции importAll, пример:
+	importAll(require.context("./static/styles", true, /\.css$/)) - подключение файлов CSS
+
 	-whiteGloom
 */
+
+
+var cache = {};
+
+function importAll (r) {
+  r.keys().forEach(key => cache[key] = r(key));
+}
