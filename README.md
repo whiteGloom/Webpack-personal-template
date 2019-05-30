@@ -25,6 +25,6 @@ Do not forget about `npm install` to install dependencies.
 `npm run buildW` - перевод Webpack'а в режим автоматической пересборки после изменений;
 
 ## Всё.
-`Просьба`: если будете использовать этот шаблон - пожалуйста, не удаляйте мою строчку в поле "contributors" в package.json. :)
+`Просьба`: если будете использовать этот шаблон - пожалуйста, не удаляйте мою строчку в поле "contributors" в package.json.
 
 `-whiteGloom`
