@@ -1,30 +1,48 @@
-# What's it? [ENG]
-This is a "for myself" template designed for quick project pre-tuning on a Webpack with Pug (HTML) and Stylus (CSS) preprocessors.
+# What is it? [ENG]
+This is a "for myself" template designed for quick project pre-tuning.
 
-Do not forget about `npm install` to install dependencies.
+**Used plugins:**
+
+* **Webpack**
+* **Stylus**
+* **Pug**
+* **Jasmine**
 
 ## How to
-`npm run build`  - launch a one-time compile of the project;
+Do not forget about `npm install` to install dependencies.
 
-`npm run buildW` - switches Webpack to watch-mode - files will be recompiled whenever they change;
+**Commands:**
+
+* `npm run build`  - launches a one-time compile of the project
+* `npm run build-watch` - launches a auto recompiling of a project
+* `npm run build-live` - launches a server
+* `npm run test` - launches a tests
 
 ## End.
-`Plea`: if you will use this template - please do not delete my line in the "contributors" field in package.json. :)
 
-`-whiteGloom`
+**-whiteGloom**
 
 
 # Шо ита? [RU]
-Ита шаблон "для себя", предназначенный для быстрой преднастройки проекта на Webpack с препроцессорами Pug ( HTML ) и Stylus ( CSS ).
+Это шаблон "для себя", для быстрой преднастройки проекта. 
 
-Не забудьте про `npm install`, что бы установить зависимости.
+**Используемые плагины:**
+
+* **Webpack**
+* **Stylus**
+* **Pug**
+* **Jasmine**
+
 
 ## Инструкция
-`npm run build`  - запуск разовой сборки проекта;
+Не забудьте про `npm install`, что бы установить зависимости.
 
-`npm run buildW` - перевод Webpack'а в режим автоматической пересборки после изменений;
+**Команды:**
+* `npm run build`  - запуск разовой сборки проекта
+* `npm run build-watch` - запуск автоматической пересборки проекта
+* `npm run build-live` - запуск сервера
+* `npm run test` - запуск тестов
 
 ## Всё.
-`Просьба`: если будете использовать этот шаблон - пожалуйста, не удаляйте мою строчку в поле "contributors" в package.json.
 
-`-whiteGloom`
+**-whiteGloom**
