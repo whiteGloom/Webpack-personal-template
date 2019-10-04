@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", test);
 
 function test() {
-	window.dadaya = 123
-}
+	console.log("It works!");
+};

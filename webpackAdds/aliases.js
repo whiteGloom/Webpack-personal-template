@@ -1,10 +1,17 @@
+const packageAliases = require("../package.json")._moduleAliases;
+
 module.exports = function(options) {
-	var options = options ? options : {};
+	options = options ? options : {};
 	var base = options.base;
-	return {
-		resolve : {
-			alias: {
-			}
-		}
+
+	var aliases = {};
+	for(var key in packageAliases){
+		aliases[key] = base + packageAliases[key].slice(1);
 	}
+
+	return {
+		resolve: {
+			alias: aliases
+		}
+	};
 };

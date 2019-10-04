@@ -1,3 +1,3 @@
 // Hello.
 
-require('./scripts/scripts.js');
+require("./scripts/scripts.js");

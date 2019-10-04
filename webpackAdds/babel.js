@@ -1,5 +1,5 @@
 module.exports = function(options) {
-	var options = options ? options : {};
+	options = options ? options : {};
 	return {
 		module: {
 			rules: [
@@ -10,5 +10,5 @@ module.exports = function(options) {
 				}
 			]
 		}
-	}
+	};
 };

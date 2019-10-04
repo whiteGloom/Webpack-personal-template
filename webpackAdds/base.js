@@ -1,22 +1,21 @@
 module.exports = function(options) {
-	var options = options ? options : {};
+	options = options ? options : {};
 	var base = options.base;
+
 	return {
-		mode: 'development',
+		mode: "development",
 		entry: {
-			'base': base + '/src/index.js',
-			'static': base + '/src/static.js'
+			"scripts": base + "/src/index.js",
+			"static": base + "/src/static.js"
 		},
 		output: {
-			path: base + '/prod/',
+			path: base + "/prod/",
 			filename: (data) => {
 				switch(data.chunk.name) {
-					case 'static':
-						return 'scripts/tmp/[name].js'
-						break;
+					case "static":
+						return "scripts/tmp/[name].js";
 					default: 
-						return 'scripts/[name].js';
-						break;
+						return "scripts/[name].js";
 				}
 			}
 		},
@@ -33,9 +32,9 @@ module.exports = function(options) {
 				cacheGroups: {
 					vendors: {
 						test: /[\\/](vendors|node_modules)[\\/]/,
-						name: 'vendors',
-						filename: '[name].js',
-						chunks: 'all'
+						name: "vendors",
+						filename: "[name].js",
+						chunks: "all"
 					},
 					default: false
 				}
@@ -44,8 +43,9 @@ module.exports = function(options) {
 		resolve : {
 			
 		},
-		devtool: 'none',
+		devtool: "none",
 		devServer: {
+			stats: "errors-only"
 		}
-	}
-}
+	};
+};

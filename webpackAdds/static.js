@@ -1,5 +1,5 @@
 module.exports = function(options) {
-	var options = options ? options : {};
+	options = options ? options : {};
 	return {
 		module: {
 			rules: [
@@ -7,8 +7,8 @@ module.exports = function(options) {
 					test:  /\.(jpe?g|gif|png|svg)/,
 					loader: "file-loader",
 					options: {
-						outputPath: 'static/images',
-						name: '[name].[ext]'
+						outputPath: "static/images",
+						name: "[name].[ext]"
 					},
 					exclude: /[\\/](node_modules|fonts)[\\/]/
 				},
@@ -16,8 +16,8 @@ module.exports = function(options) {
 					test:  /\.(woff|otf|ttf|eot)/,
 					loader: "file-loader",
 					options: {
-						outputPath: 'static/fonts',
-						name: '[name].[ext]'
+						outputPath: "static/fonts",
+						name: "[name].[ext]"
 					},
 					exclude: /[\\/]node_modules[\\/]/
 				},
@@ -25,8 +25,8 @@ module.exports = function(options) {
 					test:  /\.(svg)/,
 					loader: "file-loader",
 					options: {
-						outputPath: 'static/fonts',
-						name: '[name].[ext]'
+						outputPath: "static/fonts",
+						name: "[name].[ext]"
 					},
 					include: /[\\/]fonts[\\/]/
 				},
@@ -34,12 +34,12 @@ module.exports = function(options) {
 					test:  /\.(mp4)/,
 					loader: "file-loader",
 					options: {
-						outputPath: 'static/videos',
-						name: '[name].[ext]'
+						outputPath: "static/videos",
+						name: "[name].[ext]"
 					},
 					include: /[\\/]videos[\\/]/
 				}
 			]
 		}
-	}
+	};
 };
