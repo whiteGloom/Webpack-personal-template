@@ -23,12 +23,12 @@ This is a "for myself" template designed for quick project pre-tuning.
 ## Navigation
 * **[What is it? [ENG]](#what-is-it-eng "What is it? [ENG]")**
 	- **Navigation**
-	- **[How to](#how-to "How to")**
+	- **[How-to for working with source code](#how-to-for-working-with-source-code "How-to for working with source code")**
 		+ **[Commands](#commands "Commands")**
 		+ **[Aliases](#aliases "Aliases")**
 	- **[End.](#end "End.")**
 
-## How to
+## How-to for working with source code
 Do not forget about **`npm install`** to install dependencies.
 
 ### Commands
@@ -84,13 +84,13 @@ Do not forget about **`npm install`** to install dependencies.
 ## Navigation
 * **[Шо ита? [RU]](#шо-ита-ru "Шо ита? [RU]")**
 	- **Навигация**
-	- **[Инструкция](#Инструкция "Инструкция")**
+	- **[Инструкция для работы с исходным кодом](#Инструкция-для-работы-с-исходным-кодом "Инструкция для работы с исходным кодом")**
 		+ **[Команды](#команды "Команды")**
 		+ **[Aliases](#aliases "Aliases")**
 	- **[Всё.](#всё "Всё.")**
 
 
-## Инструкция
+## Инструкция для работы с исходным кодом
 Не забудьте про **`npm install`**, что бы установить зависимости.
 
 ### Команды
