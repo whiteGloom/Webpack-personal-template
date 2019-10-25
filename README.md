@@ -63,6 +63,11 @@ Do not forget about **`npm install`** to install dependencies.
 ## End.
 
 
+
+------------
+
+
+
 # Шо ита? [RU]
 Это шаблон "для себя", для быстрой преднастройки проекта.
 

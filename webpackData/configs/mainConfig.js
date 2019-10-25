@@ -1,15 +1,15 @@
 module.exports = function(options) {
 	options = options ? options : {};
-	var base = options.base;
+	var workFolder = options.workFolder;
 
 	return {
 		mode: "development",
 		entry: {
-			"scripts": base + "/src/index.js",
-			"static": base + "/src/static.js"
+			"scripts": workFolder + "/src/index.js",
+			"static": workFolder + "/src/static.js"
 		},
 		output: {
-			path: base + "/prod/",
+			path: workFolder + "/prod/",
 			filename: (data) => {
 				switch(data.chunk.name) {
 					case "static":
