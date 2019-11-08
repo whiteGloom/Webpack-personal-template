@@ -1,12 +1,12 @@
 {
 	"name": "name",
-	"version": "1.1.10",
+	"version": "1.1.11",
 	"description": "description",
 	"main": "webpack.config.js",
 	"scripts": {
-		"build": "webpack -p",
-		"build-watch": "webpack --watch",
-		"build-live": "webpack-dev-server",
+		"build": "babel-node index.js -- build",
+		"build-watch": "babel-node index.js -- build-watch",
+		"build-live": "babel-node index.js -- build-live",
 		"test": "babel-node spec/run.js"
 	},
 	"_moduleAliases": {},
@@ -30,12 +30,14 @@
 		"module-alias": "^2.2.2",
 		"pug": "^2.0.3",
 		"pug-loader": "^2.4.0",
+		"remove-service-outputs-plugin": "github:whiteGloom/remove-service-outputs-plugin#v0.1.4",
 		"style-loader": "^0.23.1",
 		"stylus": "^0.54.5",
 		"stylus-relative-loader": "^4.0.0",
 		"webpack": "^4.28.4",
 		"webpack-cli": "^3.2.1",
 		"webpack-dev-server": "^3.8.1",
+		"webpack-loader": "github:whiteGloom/webpack-loader#v0.1.10",
 		"webpack-merge": "^4.2.1"
 	},
 	"dependencies": {},

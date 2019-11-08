@@ -1,9 +1,10 @@
-module.exports = function(options) {
+import removeServiceOutputsPlugin from "remove-service-outputs-plugin";
+
+export default function(options) {
 	options = options ? options : {};
 	var workFolder = options.workFolder;
 
 	return {
-		mode: "development",
 		entry: {
 			"scripts": workFolder + "/src/index.js",
 			"static": workFolder + "/src/static.js"
@@ -12,21 +13,11 @@ module.exports = function(options) {
 			path: workFolder + "/prod/",
 			filename: (data) => {
 				switch(data.chunk.name) {
-					case "static":
-						return "scripts/tmp/[name].js";
 					default: 
 						return "scripts/[name].js";
 				}
 			}
 		},
-		module: {
-			rules: [
-
-			]
-		},
-		plugins: [
-		
-		],
 		optimization: {
 			splitChunks: {
 				cacheGroups: {
@@ -40,12 +31,11 @@ module.exports = function(options) {
 				}
 			}
 		},
-		resolve : {
-			
-		},
-		devtool: "none",
-		devServer: {
-			stats: "errors-only"
-		}
+		plugins: [
+			new removeServiceOutputsPlugin([
+				["static", /.*\.js$/]
+			])
+		],
+		devtool: "none"
 	};
-};
+}

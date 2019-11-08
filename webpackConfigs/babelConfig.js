@@ -1,14 +1,13 @@
-module.exports = function(options) {
-	options = options ? options : {};
+export default function() {
 	return {
 		module: {
 			rules: [
 				{
-					test: /\.js/,
+					test: /\.(js)/,
 					loader: "babel-loader",
 					exclude: /[\\/]node_modules[\\/]/
 				}
 			]
 		}
 	};
-};
+}

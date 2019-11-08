@@ -1,6 +1,6 @@
-const packageAliases = require("../../package.json")._moduleAliases;
+const packageAliases = require("../package.json")._moduleAliases;
 
-module.exports = function(options) {
+export default function(options) {
 	options = options ? options : {};
 	var workFolder = options.workFolder;
 
@@ -14,4 +14,4 @@ module.exports = function(options) {
 			alias: aliases
 		}
 	};
-};
+}
