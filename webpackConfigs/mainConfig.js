@@ -6,7 +6,7 @@ export default function(options) {
 
 	return {
 		entry: {
-			"scripts": workFolder + "/src/index.js",
+			"scripts": workFolder + "/src/entry.js",
 			"static": workFolder + "/src/static.js"
 		},
 		output: {
