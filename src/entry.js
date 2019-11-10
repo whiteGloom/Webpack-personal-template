@@ -1,3 +1,1 @@
-// Hello.
-
-require("./scripts/scripts.js");
+import "./scripts/scripts.js";

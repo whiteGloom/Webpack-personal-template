@@ -2,28 +2,35 @@
 import WebpackLoader from "webpack-loader";
 
 // Local modules
-import makeMainConfig from "./webpackConfigs/mainConfig.js";
-import makeBabelConfig from "./webpackConfigs/babelConfig.js";
-import makePugConfig from "./webpackConfigs/pugConfig.js";
-import makeStylusConfig from "./webpackConfigs/stylusConfig.js";
-import makeStaticsConfig from "./webpackConfigs/staticsConfig.js";
-import makeAliasesConfig from "./webpackConfigs/aliasesConfig.js";
+import getAliasesConfig from "./webpackConfigs/vendors/aliasesConfig.js";
+import getBabelConfig from "./webpackConfigs/vendors/babelConfig.js";
+import getStylusConfig from "./webpackConfigs/vendors/stylusConfig.js";
+import getPugConfig from "./webpackConfigs/vendors/pugConfig.js";
+import getStaticsConfig from "./webpackConfigs/vendors/staticsConfig.js";
 
-var workFolder = process.cwd();
+import getMainConfig from "./webpackConfigs/mainConfig.js";
+
+
+// Variables
 var npmArguments = process.argv.slice(2);
 var webpackLoader = new WebpackLoader();
 
+
 // Config
 webpackLoader.makeNewConfig("main", [
-	makeMainConfig({workFolder}),
-	makeBabelConfig(),
-	makePugConfig({workFolder}),
-	makeStylusConfig(),
-	makeStaticsConfig(),
-	makeAliasesConfig({workFolder})
+	getMainConfig(),
+	getBabelConfig(),
+	getPugConfig(),
+	getStylusConfig(),
+	getStaticsConfig(),
+	getAliasesConfig()
 ], "production");
 
-webpackLoader.addToDevServerConfig({stats: "errors-only"});
+webpackLoader.addToDevServerConfig({
+	stats: "errors-only",
+	open: true
+});
+
 
 // Init
 // If mode is build

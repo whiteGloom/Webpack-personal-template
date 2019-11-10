@@ -1,9 +1,9 @@
 import HTMLWebpackPlugin from "html-webpack-plugin";
 import HtmlBeautifyPlugin from "html-beautify-webpack-plugin";
 
-export default function(options) {
-	options = options ? options : {};
-	var workFolder = options.workFolder;
+const workFolder = process.cwd();
+
+export default function() {
 	return {
 		module: {
 			rules: [
